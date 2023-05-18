@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body onload="init()">
+<div class="navbar-container">
+    <nav>
+        <a id="form-link" href="index.html">Form</a>
+        <a id="history-link" href="submit.html">History</a>
+    </nav>
+</div>
+<div class="form-container">
+    <form>
+
+        <div class="input-container">
+            <label for="first-name">First name</label>
+            <input id="first-name" name="first-name" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+        <div class="input-container">
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="last-name" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input id="email" name="email" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+        <div class="input-container">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+        <div class="input-container">
+            <label for="company">Company</label>
+            <input id="company" name="company" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+        <div class="input-container">
+            <label for="address">Address</label>
+            <input id="address" name="address" onkeyup="updateFieldToStorage(event)"/>
+        </div>
+    </form>
+    <button id="submit-button">Submit form</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
